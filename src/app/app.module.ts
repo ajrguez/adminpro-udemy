@@ -1,6 +1,10 @@
+
 // Importamos Módulos
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+// Impoprtamos Rutas
+import { APP_ROUTES } from './app.routes';
 
 // Importamos Componentes
 import { AppComponent } from './app.component';
@@ -16,6 +20,9 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
 // Importamos Servicios
 import { SharedService } from './services/shared.service';
 import { SidebarService } from './services/sidebar.service';
+import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from './login/register.component';
+
 
 
 @NgModule({
@@ -28,10 +35,13 @@ import { SidebarService } from './services/sidebar.service';
     Graficas1Component,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    PagesComponent,
+    RegisterComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [
     SharedService,
