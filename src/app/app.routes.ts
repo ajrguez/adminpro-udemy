@@ -17,16 +17,16 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 const appRoutes: Routes = [
     // Definimos pages como ruta principal, y dashboard, progress y graficas como hijas
     // login y register se tratan como externas al llevar otro estilo, no la plantilla
-    {
-        path: '',
-        component: PagesComponent,
-        children: [
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'progress', component: ProgressComponent },
-            { path: 'graficas1', component: Graficas1Component },
-            { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
-        ]
-    },
+    // {
+    //     path: '',
+    //     component: PagesComponent,
+    //     children: [
+    //         { path: 'dashboard', component: DashboardComponent },
+    //         { path: 'progress', component: ProgressComponent },
+    //         { path: 'graficas1', component: Graficas1Component },
+    //         { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
+    //     ]
+    // },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: '**', component: NopagefoundComponent }

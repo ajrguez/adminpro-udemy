@@ -1,7 +1,10 @@
 
+
 import { NgModule } from '@angular/core';
 import { SharedModule } from './../shared/shared.module';
 
+// Importamos la rutas hijas
+import { PAGES_ROUTES } from './pages.routes';
 
 // Importamos los componentes
 
@@ -24,7 +27,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
         PagesComponent
     ],
     imports: [
-        SharedModule
+        SharedModule,
+        PAGES_ROUTES
     ]
 })
 
