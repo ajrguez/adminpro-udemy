@@ -7,6 +7,7 @@ import { PagesComponent } from './pages.component';
 
 const pagesRoutes: Routes = [
     {
+        // Definimos pages como ruta principal, y dashboard, progress y graficas como hijas
         path: '',
         component: PagesComponent,
         children: [
